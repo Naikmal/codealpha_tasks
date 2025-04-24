@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Calculator</title>
+	<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='black' class='bi bi-calculator' viewBox='0 0 16 16'%3E
+    %3Cpath d='M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z'/%3E
+    %3Cpath d='M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z'/%3E
+    %3C/svg%3E"/>
+	</svg>
+	<!-- Bootstrap Icons CDN link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	
+	<!-- link to the css filr -->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<script type="text/javascript">
+		// var user_input = document.getElementById('user_input');
+	</script>
+	<main class="container">
+		
+		<!-- input field -->
+		<div class="">
+			<form>
+				<input type="text" id="user_input"   class="user-input" autofocus >
+				<i class="bi bi-x delete"></i>
+			</form>
+		</div>
+
+		<!-- result section -->
+		<!-- <div class="exp-result">3333333333330000</div> -->
+
+		<!-- buttons -->
+		<hr>
+		<div class="btn-container">
+			<button class='btn btn-h icon key-h'><i class="bi">H</i></button>
+
+			<button 
+				class='btn icon key-c '
+			 	onclick="user_input.value = '' ">
+				<i class="bi">C</i>
+			</button>
+			
+			<button class='btn icon key-x' >
+				DE
+			</button>
+			<button class="btn icon key-+" onclick="user_input.value += '+'">
+				+
+			</button>
+		
+			<button class="btn key-7 " onclick="user_input.value += '7' ">7</button> 
+			<button class="btn key-8" onclick="user_input.value += '8' ">8</button>
+			<button class="btn key-9" onclick="user_input.value += '9' ">9</button>
+			<button class="btn icon key--" onclick="user_input.value += '-' ">
+				-
+			</button>
+
+			<button class="btn key-4" onclick="user_input.value += '4' ">4</button>
+			<button class="btn key-5" onclick="user_input.value += '5' ">5</button>
+			<button class="btn key-6" onclick="user_input.value += '6' ">6</button>
+			<button class="btn icon key-*" onclick="user_input.value += '×'">
+				×
+			</button>
+
+			<button class="btn key-1" onclick="user_input.value += '1' ">1</button>
+			<button class="btn key-2" onclick="user_input.value += '2' ">2</button>
+			<button class="btn key-3" onclick="user_input.value += '3' ">3</button>
+			<button class="btn icon key-/" onclick="user_input.value += '÷' ">
+				÷
+			</button>
+
+			<button class="btn key-0" onclick="user_input.value += '0' ">0</button>
+			<button class="btn key-0" onclick="user_input.value += '00' ">00</button>
+			<button class="btn key-." onclick="user_input.value += '.' ">.</button>
+			<button class="btn icon equal-key key-=" >
+			=</button>
+
+
+			
+			<!-- <button class="btn"></button> -->
+
+
+		</div>
+	</main>
+
+	<script type="text/javascript" src="scripts.js">
+		
+	</script>
+
+</body>
+</html>

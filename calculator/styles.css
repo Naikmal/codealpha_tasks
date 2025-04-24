@@ -1,0 +1,87 @@
+
+/*color plate*/
+:root {
+	--green: #59CE8F;
+	--black: #000000;
+	--white: #E8F9FD;
+	--red: #FF1E00;
+	--btn-background: rgba(255, 255, 255, 0.1);
+
+}
+
+
+* {
+	margin: 0;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--black);
+	box-sizing: border-box;
+}
+.container {
+	width: 200px;
+	position: relative;
+	box-shadow: 1px 1px  7px gray;
+	padding: 5px;
+}
+
+hr {
+	margin-top: 20px;
+
+}
+
+
+.btn-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 10px;
+}
+
+.btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: none;
+	font-size: 1em;
+	font-weight: 500;
+	color: var(--white);
+	background-color: var(--btn-background);
+}
+
+./*btn:active {
+	background-color: rgba(255, 255, 255, 0.5);
+}*/
+
+.btn i {
+	font-size: 1.3em;
+}
+
+.icon {
+	color: darkgreen;
+}
+
+.btn-clear {
+	color: orangered;
+}
+
+.user-input {
+	caret-color: darkgreen;
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+.exp-result {
+	color: white;
+	position: absolute;
+	right: 0;
+	top: 15%;
+}
+
