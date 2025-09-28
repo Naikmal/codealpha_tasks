@@ -18,7 +18,7 @@ calculator/
 ├── index.html     # Main HTML file
 ├── scripts.js     # JavaScript for calculator logic and interactivity
 ├── styles.css     # Styling for the calculator UI
-└── README.md      # Project documentation
+/README.md      # Project documentation
 ```
 
 ## Usage
